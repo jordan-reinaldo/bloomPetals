@@ -1,0 +1,105 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/imagefond3.jpg);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color:rgba(236, 182, 182, 0.865);
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+@font-face {
+    font-family: "Bloom";
+    src: url("Blooms.otf") format("truetype");
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bloom', sans-serif;
+    font-size: 5em;
+    background-image: linear-gradient(to right, #7a52ba, #c0803c); /* Dégradé de gauche à droite du jaune au rouge */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h2{
+    text-align: center;
+    color: rgb(220, 95, 95)
+  }
+
+#liens {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boutonnav {
+    text-decoration: none;
+}
+
+.boutonnav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#search {
+    margin-right: 3vh;
+    border-radius: 20px; /* Rayon de 20 pixels pour créer une forme arrondie */
+    padding: 4%; /* Ajoute de l'espace à l'intérieur de la barre de recherche */
+    opacity: 50%;
+    border: none;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.bordform {
+    border-radius: 3vh;
+    border-color: rgba(223, 94, 94, 0.562);
+    margin-bottom: 2vh;
+}
+
+
+
+#message {
+    border-radius: 1vh;
+    border-color: rgba(223, 94, 94, 0.562);
+    margin-bottom: 1vh;
+}
+
+#bouton {
+    border-radius: 3vh;
+}
+
+#bouton:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #liens {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+

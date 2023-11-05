@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BloomPetals Contact">
+        <meta name="author" content="Reinaldo Jordan">
+        <link href="contact.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <aside id="liens">
+                    <a class="boutonnav" href="index.html"><strong>Home</strong></a>
+                    <a class="boutonnav" href="entreprise.html"><strong>Entreprise</strong></a>
+                    <a class="boutonnav" href="realisations.html"><strong>Réalisations</strong></a>
+                    <a class="boutonnav" href="contact.html" ><strong>Contact</strong></a>
+                </aside>
+                    <form action="/votre-page-de-recherche" method="get">
+                    <input id="search" type="text" name="q" placeholder="Rechercher...">
+                    </form> 
+            </nav>
+        </header>
+        <main>
+            <h1>Bloom Contact</h1>
+            <section id="contact" class="section-contact">
+                <h2>Contactez-nous</h2>
+                <form id="formulaire">
+                    <label for="civilite">Civilité :</label>
+                    <select class="bordform" name="civilite" required>
+                        <option value="Mme">Madame</option>
+                        <option value="M">Monsieur</option>
+                    </select>
+                    <label for="nom">Nom :</label>
+                    <input class="bordform" type="text" class="bordformulaire" name="nom" required>
+                    <label for="Prénom">Prénom:</label>
+                    <input class="bordform" type="text" class="bordformulaire" name="nom" required>
+                    <label for="adresse">Adresse :</label>
+                    <input class="bordform" type="email" class="bordformulaire" name="email" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="10" cols="70" required></textarea>
+                    <label>
+                        <input type="checkbox" name="confidentialite" required>
+                        J'accepte les politiques de confidentialité de l'entreprise
+                    </label>
+                    <button id="bouton" type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgba(236, 182, 182, 0.865);
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+@font-face {
+    font-family: "Bloom";
+    src: url("Blooms.otf") format("truetype");
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bloom', sans-serif;
+    font-size: 5em;
+    background-image: linear-gradient(to right, #7a52ba, #c0803c); /* Dégradé de gauche à droite du jaune au rouge */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h2{
+    text-align: center;
+    color: rgb(220, 95, 95)
+  }
+
+#liens {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boutonnav {
+    text-decoration: none;
+}
+
+.boutonnav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+input {
+    margin-right: 3vh;
+    border-radius: 20px; /* Rayon de 20 pixels pour créer une forme arrondie */
+    padding: 4%; /* Ajoute de l'espace à l'intérieur de la barre de recherche */
+    opacity: 50%;
+    border: none;
+}
+
+#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.images-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0 500px;
+  }
+  
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.imagepres {
+    position: relative;
+    display: inline-block;
+}
+
+.images {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.presentation {
+    font-size: 1.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 20px 10px;
+    text-align: center;
+    color: rgba(193, 59, 59, 0.856);
+}
+
+.imagepres:hover .images {
+    transform: scale(1.4);
+    opacity: 0.5; /* Rend l'image opaque en hover */
+    filter:blur(4px);
+    transition: 1s ease-in-out;
+}
+
+.imagepres:hover .presentation {
+    display: block; /* Affiche le texte à l'intérieur de l'image en hover */
+}
+
+@media screen and (max-width: 1000px) {
+    #liens {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .images-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+
+

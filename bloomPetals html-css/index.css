@@ -1,0 +1,125 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgba(236, 182, 182, 0.865);
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bloom', sans-serif;
+    font-size: 5em;
+    background-image: linear-gradient(to right, #7a52ba, #c0803c); /* Dégradé de gauche à droite du jaune au rouge */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h2{
+    text-align: center;
+    color: rgb(220, 95, 95)
+  }
+
+#liens {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boutonnav {
+    text-decoration: none;
+}
+
+.boutonnav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+input {
+    margin-right: 3vh;
+    border-radius: 20px; /* Rayon de 20 pixels pour créer une forme arrondie */
+    padding: 4%; /* Ajoute de l'espace à l'intérieur de la barre de recherche */
+    opacity: 50%;
+    border: none;
+}
+
+@font-face {
+    font-family: "Bloom";
+    src: url("Blooms.otf") format("truetype");
+}
+
+#quisommesnous {
+    text-align: center;
+    padding: 0 5%;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.images img {
+    border: solid rgba(236, 182, 182, 0.865);
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 10px 10px 20px rgba(32, 2, 2, 0.765);
+    height: 25vh;
+    width: 30vh;
+    margin: 2.4vh 0;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-right: solid 1px rgb(165, 41, 41);
+    border-left: solid 1px  rgb(165, 41, 41);
+    padding: 0 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .images {
+    display: none;
+  }
+
+  #liens {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
