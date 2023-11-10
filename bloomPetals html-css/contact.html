@@ -31,24 +31,25 @@
                 <h2>Contactez-nous</h2>
                 <form id="formulaire">
                     <label for="civilite">Civilité :</label>
-                    <select class="bordform" name="civilite" required>
+                    <select class="bordform" name="civilite" id="civilite" required>
                         <option value="Mme">Madame</option>
                         <option value="M">Monsieur</option>
                     </select>
                     <label for="nom">Nom :</label>
-                    <input class="bordform" type="text" class="bordformulaire" name="nom" required>
-                    <label for="Prénom">Prénom:</label>
-                    <input class="bordform" type="text" class="bordformulaire" name="nom" required>
+                    <input class="bordform" type="text" name="nom" id="nom" required>
+                    <label for="prenom">Prénom:</label>
+                    <input class="bordform" type="text" name="prenom" id="prenom" required>
                     <label for="adresse">Adresse :</label>
-                    <input class="bordform" type="text" class="bordformulaire" name="adresse" required>
+                    <input class="bordform" type="text" name="adresse" id="adresse" required>
                     <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="10" cols="70" required></textarea>
+                    <textarea class="bordform" id="message" name="message" rows="10" cols="70" required></textarea>
                     <label>
                         <input type="checkbox" name="confidentialite" required>
                         J'accepte les politiques de confidentialité de l'entreprise
                     </label>
                     <button id="bouton" type="submit">Envoyer</button>
                 </form>
+                
             </section>
         </main>
     </body>
